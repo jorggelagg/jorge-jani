@@ -1,397 +1,271 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080707"><title>Jorge & Jani — Nuestra historia</title><style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap');
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080707;color:#f5eee8;font-family:Inter,Arial,sans-serif;font-weight:300}section{padding:82px 22px}.hero{height:100svh;min-height:680px;position:relative;display:flex;align-items:flex-end;padding:28px 24px 56px;background:url('foto-04.jpeg') center/cover}.hero:after,.final:after,.song:after{content:"";position:absolute;inset:0}.hero:after{background:linear-gradient(180deg,#0001 15%,#0004 50%,#000e 100%)}.content{position:relative;z-index:1}.kicker,.label{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#caa17d}.hero h1{font:400 clamp(66px,18vw,112px)/.75 'Cormorant Garamond';letter-spacing:-.03em;margin:15px 0 26px}.hero p{font:400 clamp(21px,5.5vw,34px)/1.08 'Cormorant Garamond';max-width:650px;margin:0}.scroll{display:inline-block;color:white;text-decoration:none;font-size:10px;letter-spacing:.22em;margin-top:28px}.intro{background:#f4eee7;color:#211b18;text-align:center}.quote{font:400 clamp(30px,7.2vw,54px)/1.07 'Cormorant Garamond';max-width:850px;margin:auto}.date{margin-top:26px;font-size:10px;letter-spacing:.2em;opacity:.55}.chapter{max-width:950px;margin:auto}.chapter h2{font:400 51px/.9 'Cormorant Garamond';margin:12px 0 22px}.chapter p{color:#bfb4ad;line-height:1.7;font-size:14px;max-width:680px}.photos{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:32px}.photo{aspect-ratio:2/3;overflow:hidden}.photo.wide{grid-column:1/-1;aspect-ratio:16/10}.photo img{width:100%;height:100%;object-fit:cover;display:block}.counter{text-align:center;background:#111}.counter h2{font:400 51px 'Cormorant Garamond';margin:12px 0}.counter-sub{font-size:10px;letter-spacing:.2em;color:#888}.nums{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:35px auto 0;border-block:1px solid #fff2}.nums div{padding:23px 3px;border-right:1px solid #fff1}.nums div:last-child{border:0}.num{font:400 39px 'Cormorant Garamond'}.unit{font-size:8px;letter-spacing:.16em;color:#888;text-transform:uppercase}.song{min-height:570px;display:flex;align-items:center;text-align:center;position:relative;background:url('foto-05.jpeg') center/cover fixed}.song:after{background:#0009}.song .content{margin:auto}.song-title{font:400 63px/.84 'Cormorant Garamond';margin:16px}.song-by{font-size:10px;letter-spacing:.2em;text-transform:uppercase}.note{max-width:510px;color:#ddd;line-height:1.6;font-size:13px;margin:28px auto}.questions{background:#eee6df;color:#211b18}.questions p{color:#665b54}.q{border-top:1px solid #c9bbb0;padding:21px 0;font:400 25px 'Cormorant Garamond';cursor:pointer}.answer{display:none;font:13px/1.6 Inter;color:#806f65;padding:2px 0 18px}.q.open .answer{display:block}.letter{text-align:center;min-height:560px;display:flex;align-items:center}.letter h2{font:400 60px/.9 'Cormorant Garamond'}.placeholder{border:1px dashed #fff4;padding:30px;color:#aaa;line-height:1.7;font-size:13px}.final{height:88svh;min-height:560px;display:flex;align-items:flex-end;padding:25px;position:relative;background:url('foto-08.jpeg') center/cover}.final:after{background:linear-gradient(transparent 25%,#000d 100%)}.final .content{max-width:700px}.final h2{font:400 66px/.82 'Cormorant Garamond';margin:12px 0}.top{position:fixed;right:15px;bottom:15px;background:#fff;color:#111;text-decoration:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;z-index:5}@media(min-width:700px){section{padding:110px 50px}.hero{padding-left:7vw}.photos{grid-template-columns:repeat(4,1fr)}.photo.wide{grid-column:span 2}}
-/* CARTA */
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080707">
+<title>Jorge & Jani — Nuestra historia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#080707;color:#f5eee8;font-family:Inter,Arial,sans-serif;font-weight:300}
+section{padding:82px 22px}
+.hero{height:100svh;min-height:680px;position:relative;display:flex;align-items:flex-end;padding:28px 24px 56px;background:url('foto-04.jpeg') center/cover}
+.hero:after,.final:after,.song:after{content:"";position:absolute;inset:0}
+.hero:after{background:linear-gradient(180deg,#0001 15%,#0004 50%,#000e 100%)}
+.content{position:relative;z-index:1}
+.kicker,.label{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#caa17d}
+.hero h1{font:400 clamp(66px,18vw,112px)/.75 'Cormorant Garamond';letter-spacing:-.03em;margin:15px 0 26px}
+.hero p{font:400 clamp(21px,5.5vw,34px)/1.08 'Cormorant Garamond';max-width:650px;margin:0}
+.scroll{display:inline-block;color:white;text-decoration:none;font-size:10px;letter-spacing:.22em;margin-top:28px}
+.intro{background:#f4eee7;color:#211b18;text-align:center}
+.quote{font:400 clamp(30px,7.2vw,54px)/1.07 'Cormorant Garamond';max-width:850px;margin:auto}
+.date{margin-top:26px;font-size:10px;letter-spacing:.2em;opacity:.55}
+.chapter{max-width:950px;margin:auto}
+.chapter h2{font:400 51px/.9 'Cormorant Garamond';margin:12px 0 22px}
+.chapter p{color:#bfb4ad;line-height:1.7;font-size:14px;max-width:680px}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:32px}
+.photo{aspect-ratio:2/3;overflow:hidden}
+.photo.wide{grid-column:1/-1;aspect-ratio:16/10}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.counter{text-align:center;background:#111}
+.counter h2{font:400 51px 'Cormorant Garamond';margin:12px 0}
+.counter-sub{font-size:10px;letter-spacing:.2em;color:#888}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:35px auto 0;border-block:1px solid #fff2}
+.nums div{padding:23px 3px;border-right:1px solid #fff1}
+.nums div:last-child{border:0}
+.num{font:400 39px 'Cormorant Garamond'}
+.unit{font-size:8px;letter-spacing:.16em;color:#888;text-transform:uppercase}
+.song{min-height:570px;display:flex;align-items:center;text-align:center;position:relative;background:url('foto-05.jpeg') center/cover fixed}
+.song:after{background:#0009}
+.song .content{margin:auto}
+.song-title{font:400 63px/.84 'Cormorant Garamond';margin:16px}
+.song-by{font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.note{max-width:510px;color:#ddd;line-height:1.6;font-size:13px;margin:28px auto}
+.questions{background:#eee6df;color:#211b18}
+.questions p{color:#665b54}
+.q{border-top:1px solid #c9bbb0;padding:21px 0;font:400 25px 'Cormorant Garamond';cursor:pointer}
+.answer{display:none;font:13px/1.6 Inter;color:#806f65;padding:2px 0 18px}
+.q.open .answer{display:block}
 
-.letter-section {
-  background: #0b0908;
-  min-height: 760px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+/* Carta */
+.letter-section{background:#0b0908;min-height:760px;display:flex;align-items:center;text-align:center;position:relative;overflow:hidden}
+.letter-section:before{content:"";position:absolute;width:420px;height:420px;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,#9a704422 0%,transparent 68%);pointer-events:none}
+.letter-wrap{width:min(720px,100%);margin:auto;position:relative;z-index:1}
+.letter-intro{transition:opacity .5s ease,transform .5s ease}
+.letter-intro.hide{opacity:0;transform:translateY(-15px);pointer-events:none}
+.envelope-button{border:0;background:none;color:#f5eee8;cursor:pointer;padding:10px 12px}
+.envelope{width:min(290px,78vw);height:190px;margin:0 auto 25px;position:relative;filter:drop-shadow(0 18px 28px #0009);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.envelope:hover{transform:translateY(-4px)}
+.env-body{position:absolute;inset:0;background:linear-gradient(145deg,#d8c1a9,#a98567);border-radius:5px;overflow:hidden}
+.env-body:after,.env-body:before{content:"";position:absolute;inset:0}
+.env-body:before{background:linear-gradient(33deg,transparent 49.5%,#76553e 50%,transparent 50.5%),linear-gradient(-33deg,transparent 49.5%,#76553e 50%,transparent 50.5%);opacity:.32}
+.env-body:after{clip-path:polygon(0 0,50% 58%,100% 0,100% 16%,50% 72%,0 16%);background:#e2ccb6;opacity:.9}
+.seal{position:absolute;z-index:4;left:50%;top:53%;transform:translate(-50%,-50%);width:47px;height:47px;border-radius:50%;display:grid;place-items:center;background:#6e2d2d;color:#ead7c7;font:600 19px 'Cormorant Garamond';box-shadow:0 4px 12px #0005}
+.letter-hint{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#caa17d}
+.letter-card{display:none;text-align:left;background:#f4eee7;color:#211b18;padding:34px 25px 42px;box-shadow:0 25px 70px #000b;position:relative;max-height:72svh;overflow:auto;animation:paperIn .9s cubic-bezier(.2,.8,.2,1) both}
+.letter-card.show{display:block}
+@keyframes paperIn{from{opacity:0;transform:translateY(35px) scale(.97)}to{opacity:1;transform:none}}
+.letter-card:before{content:"";position:absolute;inset:10px;border:1px solid #bba99866;pointer-events:none}
+.letter-to{font:400 34px 'Cormorant Garamond';margin:0 0 22px}
+.letter-body{font:400 20px/1.42 'Cormorant Garamond';white-space:pre-line}
+.letter-body p{margin:0 0 20px}
+.letter-sign{font:500 25px 'Cormorant Garamond';margin-top:30px;text-align:right}
+.letter-progress{height:2px;background:#c6b6aa55;margin:0 0 20px;overflow:hidden}
+.letter-progress span{display:block;height:100%;width:0;background:#8b6a53;transition:width .2s linear}
+.letter-close{display:block;margin:22px auto 0;border:1px solid #bca99a;background:transparent;padding:10px 18px;font:400 14px 'Cormorant Garamond';color:#3c3028;cursor:pointer}
+
+.final{height:88svh;min-height:560px;display:flex;align-items:flex-end;padding:25px;position:relative;background:url('foto-08.jpeg') center/cover}
+.final:after{background:linear-gradient(transparent 25%,#000d 100%)}
+.final .content{max-width:700px}
+.final h2{font:400 66px/.82 'Cormorant Garamond';margin:12px 0}
+.top{position:fixed;right:15px;bottom:15px;background:#fff;color:#111;text-decoration:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;z-index:5}
+@media(min-width:700px){
+section{padding:110px 50px}
+.hero{padding-left:7vw}
+.photos{grid-template-columns:repeat(4,1fr)}
+.photo.wide{grid-column:span 2}
+.letter-card{padding:50px 65px}
+.letter-body{font-size:22px;line-height:1.48}
 }
+</style>
+</head>
+<body>
 
-.letter-wrap {
-  width: min(720px, 100%);
-  margin: auto;
-  position: relative;
-  z-index: 1;
-}
+<header class="hero">
+<div class="content">
+<div class="kicker">Una historia que apenas comienza</div>
+<h1>Jorge<br>&amp; Jani</h1>
+<p>“Estuvimos tanto tiempo cerca uno del otro, pero el ahora es el tiempo que Dios predestinó para que nuestros caminos finalmente se cruzaran para nunca más separarse.”</p>
+<a class="scroll" href="#historia">DESCUBRIR ↓</a>
+</div>
+</header>
 
-.letter-intro {
-  transition: opacity .5s ease, transform .5s ease;
-}
+<section class="intro" id="historia">
+<div class="quote">Hay historias que empiezan con un instante. La nuestra empezó mucho antes de darnos cuenta.</div>
+<div class="date">07 · JUNIO · 2026</div>
+</section>
 
-.letter-intro.hide {
-  opacity: 0;
-  transform: translateY(-15px);
-  pointer-events: none;
-}
+<section>
+<div class="chapter">
+<div class="label">CAPÍTULO I · NOSOTROS</div>
+<h2>Donde sea,<br>si es contigo.</h2>
+<p>Ocho recuerdos guardados aquí. No como fotografías perfectas, sino como pequeñas pruebas de todo lo que estamos viviendo juntos.</p>
+<div class="photos">
+<div class="photo"><img src="foto-01.jpeg"></div>
+<div class="photo"><img src="foto-02.jpeg"></div>
+<div class="photo wide"><img src="foto-03.jpeg"></div>
+<div class="photo"><img src="foto-04.jpeg"></div>
+<div class="photo"><img src="foto-05.jpeg"></div>
+<div class="photo wide"><img src="foto-06.jpeg"></div>
+<div class="photo"><img src="foto-07.jpeg"></div>
+<div class="photo"><img src="foto-08.jpeg"></div>
+</div>
+</div>
+</section>
 
-.envelope-button {
-  border: 0;
-  background: none;
-  color: #f5eee8;
-  cursor: pointer;
-  padding: 10px 12px;
-}
+<section class="counter">
+<div class="chapter">
+<div class="label">CAPÍTULO II · EL TIEMPO</div>
+<h2>Desde aquel día…</h2>
+<div class="counter-sub">07 DE JUNIO DE 2026</div>
+<div class="nums">
+<div><div class="num" id="d">0</div><div class="unit">días</div></div>
+<div><div class="num" id="h">0</div><div class="unit">horas</div></div>
+<div><div class="num" id="m">0</div><div class="unit">minutos</div></div>
+<div><div class="num" id="s">0</div><div class="unit">segundos</div></div>
+</div>
+</div>
+</section>
 
-.envelope {
-  width: min(290px, 78vw);
-  height: 190px;
-  margin: 0 auto 25px;
-  position: relative;
-  filter: drop-shadow(0 18px 28px #0009);
-  transition: transform .8s ease;
-}
-
-.envelope:hover {
-  transform: translateY(-4px);
-}
-
-.env-body {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(145deg, #d8c1a9, #a98567);
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.env-body:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  clip-path: polygon(
-    0 0,
-    50% 58%,
-    100% 0,
-    100% 16%,
-    50% 72%,
-    0 16%
-  );
-  background: #e2ccb6;
-}
-
-.seal {
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  top: 53%;
-  transform: translate(-50%, -50%);
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #6e2d2d;
-  color: #ead7c7;
-  font: 600 19px 'Cormorant Garamond';
-  box-shadow: 0 4px 12px #0005;
-}
-
-.letter-hint {
-  font-size: 10px;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: #caa17d;
-}
-
-.letter-card {
-  display: none;
-  text-align: left;
-  background: #f4eee7;
-  color: #211b18;
-  padding: 34px 25px 42px;
-  box-shadow: 0 25px 70px #000b;
-  position: relative;
-  max-height: 72svh;
-  overflow-y: auto;
-  animation: paperIn .9s cubic-bezier(.2,.8,.2,1) both;
-}
-
-.letter-card.show {
-  display: block;
-}
-
-@keyframes paperIn {
-  from {
-    opacity: 0;
-    transform: translateY(35px) scale(.97);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.letter-card:before {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  border: 1px solid #bba99866;
-  pointer-events: none;
-}
-
-.letter-to {
-  font: 400 34px 'Cormorant Garamond';
-  margin: 0 0 22px;
-}
-
-.letter-body {
-  font: 400 20px/1.42 'Cormorant Garamond';
-}
-
-.letter-body p {
-  margin: 0 0 20px;
-}
-
-.letter-sign {
-  font: 500 25px 'Cormorant Garamond';
-  margin-top: 30px;
-  text-align: right;
-}
-
-.letter-progress {
-  height: 2px;
-  background: #c6b6aa55;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-
-.letter-progress span {
-  display: block;
-  height: 100%;
-  width: 0;
-  background: #8b6a53;
-  transition: width .2s linear;
-}
-
-@media (min-width: 700px) {
-
-  .letter-card {
-    padding: 50px 65px;
-  }
-
-  .letter-body {
-    font-size: 22px;
-    line-height: 1.48;
-  }
-
-}
-</style></head><body>
-<header class="hero"><div class="content"><div class="kicker">Una historia que apenas comienza</div><h1>Jorge<br>&amp; Jani</h1><p>“Estuvimos tanto tiempo cerca uno del otro, pero el ahora es el tiempo que Dios predestinó para que nuestros caminos finalmente se cruzaran para nunca más separarse.”</p><a class="scroll" href="#historia">DESCUBRIR ↓</a></div></header>
-<section class="intro" id="historia"><div class="quote">Hay historias que empiezan con un instante. La nuestra empezó mucho antes de darnos cuenta.</div><div class="date">07 · JUNIO · 2026</div></section>
-<section><div class="chapter"><div class="label">CAPÍTULO I · NOSOTROS</div><h2>Donde sea,<br>si es contigo.</h2><p>Ocho recuerdos guardados aquí. No como fotografías perfectas, sino como pequeñas pruebas de todo lo que estamos viviendo juntos.</p><div class="photos"><div class="photo"><img src="foto-01.jpeg"></div><div class="photo"><img src="foto-02.jpeg"></div><div class="photo wide"><img src="foto-03.jpeg"></div><div class="photo"><img src="foto-04.jpeg"></div><div class="photo"><img src="foto-05.jpeg"></div><div class="photo wide"><img src="foto-06.jpeg"></div><div class="photo"><img src="foto-07.jpeg"></div><div class="photo"><img src="foto-08.jpeg"></div></div></div></section>
-<section class="counter"><div class="chapter"><div class="label">CAPÍTULO II · EL TIEMPO</div><h2>Desde aquel día…</h2><div class="counter-sub">07 DE JUNIO DE 2026</div><div class="nums"><div><div class="num" id="d">0</div><div class="unit">días</div></div><div><div class="num" id="h">0</div><div class="unit">horas</div></div><div><div class="num" id="m">0</div><div class="unit">minutos</div></div><div><div class="num" id="s">0</div><div class="unit">segundos</div></div></div></div></section>
 <section class="song">
-  <div class="content">
-    <div class="label">NUESTRA CANCIÓN</div>
-
-    <div class="song-title">
-      Azulado y<br>Amarilla
-    </div>
-
-    <div class="song-by">Linda Habitante</div>
-
-    <div style="max-width:620px;margin:30px auto 0;">
-      <iframe
-        style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/5Vt97taZZcTHQEyiFUzVFD?utm_source=generator"
-        width="100%"
-        height="152"
-        frameborder="0"
-        allowfullscreen
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy">
-      </iframe>
-    </div>
-
-    <div class="note">
-      Una canción que ahora también forma parte de nuestra historia.
-      <br><br>
-      Dale play… y quédate un momento aquí conmigo. ♡
-    </div>
-
-    <a
-      href="https://open.spotify.com/track/5Vt97taZZcTHQEyiFUzVFD"
-      target="_blank"
-      rel="noopener"
-      style="display:inline-block;margin-top:4px;padding:12px 22px;border:1px solid #ffffff55;border-radius:30px;color:#fff;text-decoration:none;font-size:10px;letter-spacing:.18em;text-transform:uppercase;">
-      ABRIR EN SPOTIFY
-    </a>
-  </div>
+<div class="content">
+<div class="label">NUESTRA CANCIÓN</div>
+<div class="song-title">Azulado y<br>Amarilla</div>
+<div class="song-by">Linda Habitante</div>
+<div class="note">Esta sección está preparada para conectar la canción. Cuando me pases el enlace o el archivo de audio que quieras usar, puedo hacer que se reproduzca dentro de la experiencia.</div>
+</div>
 </section>
-<section class="questions"><div class="chapter"><div class="label">CAPÍTULO III · SOLO NOSOTROS</div><h2>¿Cuánto recuerdas<br>de nuestra historia?</h2><p>Toca una pregunta. Después podemos poner las respuestas reales y convertirlo en un pequeño juego entre ustedes.</p><div class="q">¿En dónde fue nuestro primer beso?<div class="answer">Aquí pondremos la respuesta.</div></div><div class="q">¿En qué lugar te pedí ser mi novia?<div class="answer">Aquí pondremos la respuesta.</div></div><div class="q">¿Qué es lo que más te gusta de las formas en que te muestro amor?<div class="answer">Aquí pondremos la respuesta.</div></div><div class="q">¿Cuál es el gesto que te hago siempre y te digo que es para que te acuerdes de mí?<div class="answer">Aquí pondremos la respuesta.</div></div><div class="q">¿Cuál es tu momento favorito conmigo hasta ahora?<div class="answer">Aquí pondremos la respuesta.</div></div></div></section>
+
+<section class="questions">
+<div class="chapter">
+<div class="label">CAPÍTULO III · SOLO NOSOTROS</div>
+<h2>¿Cuánto recuerdas<br>de nuestra historia?</h2>
+<p>Toca cada pregunta para descubrir un recuerdo de nuestra historia. ❤️</p>
+<div class="q">¿En dónde fue nuestro primer beso?<div class="answer">En la cocina, en el cachete, después de mi primera escena de celos en el río🥹❤️</div></div>
+<div class="q">¿En qué lugar te pedí ser mi novia?<div class="answer">En el mirador de Salina Cruz, unos días antes de que colapsara jajaja nuestro amor vino a romperla😝❤️</div></div>
+<div class="q">¿Qué es lo que más te gusta de las formas en que te muestro amor?<div class="answer">Creo que esta respuesta es por mí, lo que más me gusta es que te esmeras en ser cariñosa y hablarme mimado, eso me encanta demasiado! si lees todo me gustaría que me dijeras a ti qué es lo que más te gusta de las formas en que te muestro amor</div></div>
+<div class="q">¿Cuál es el gesto que te hago siempre y te digo que es para que te acuerdes de mí?<div class="answer">Agarrarte la nariz con los dedos🥹❤️</div></div>
+<div class="q">¿Cuál es tu momento favorito conmigo hasta ahora?<div class="answer">Mi momento favorito contigo es cuando nos poníamos a pintar y nos distraíamos mucho por besarnos o hacer otras tonterías🥹❤️</div></div>
+</div>
+</section>
+
 <section class="letter-section" id="carta">
+<div class="letter-wrap">
 
-  <div class="letter-wrap">
+<div class="letter-intro" id="letterIntro">
+<div class="label">CAPÍTULO IV · UNA CARTA PARA JANI</div>
+<h2 class="chapter" style="font:400 60px/.9 'Cormorant Garamond';margin:12px auto 28px;">Hay algo que quiero decirte…</h2>
+<button class="envelope-button" id="openLetter" aria-label="Abrir carta">
+<div class="envelope">
+<div class="env-body"></div>
+<div class="seal">J&amp;J</div>
+</div>
+<div class="letter-hint">Toca para abrir</div>
+</button>
+</div>
 
-    <div class="letter-intro" id="letterIntro">
+<article class="letter-card" id="letterCard">
+<div class="letter-progress"><span id="letterProgress"></span></div>
+<h3 class="letter-to">Hola, gordita.</h3>
+<div class="letter-body" id="letterText"></div>
+<div class="letter-sign">— Jorge ❤️</div>
+<button class="letter-close" id="closeLetter">Cerrar carta</button>
+</article>
 
-      <div class="label">
-        CAPÍTULO IV · UNA CARTA PARA JANI
-      </div>
-
-      <h2>
-        Hay algo que quiero decirte…
-      </h2>
-
-      <button class="envelope-button" id="openLetter">
-
-        <div class="envelope">
-          <div class="env-body"></div>
-          <div class="seal">J&amp;J</div>
-        </div>
-
-        <div class="letter-hint">
-          TOCA PARA ABRIR
-        </div>
-
-      </button>
-
-    </div>
-
-
-    <article class="letter-card" id="letterCard">
-
-      <div class="letter-progress">
-        <span id="letterProgress"></span>
-      </div>
-
-      <h3 class="letter-to">
-        Hola, gordita.
-      </h3>
-
-      <div class="letter-body" id="letterText"></div>
-
-      <div class="letter-sign">
-        — Jorge ❤️
-      </div>
-
-    </article>
-
-  </div>
-
+</div>
 </section>
-<section class="final"><div class="content"><div class="label">CONTINUARÁ…</div><h2>Esto es<br>solo el comienzo.</h2><p>Jorge &amp; Jani · 07.06.2026</p></div></section><a class="top" href="#">↑</a>
-<script>const start=new Date('2026-06-07T00:00:00');function tick(){let x=Math.max(0,new Date()-start);d.textContent=Math.floor(x/86400000);h.textContent=Math.floor(x/3600000)%24;m.textContent=Math.floor(x/60000)%60;s.textContent=Math.floor(x/1000)%60}setInterval(tick,1000);tick();document.querySelectorAll('.q').forEach(q=>q.onclick=()=>q.classList.toggle('open'));</script> <script>
+
+<section class="final">
+<div class="content">
+<div class="label">CONTINUARÁ…</div>
+<h2>Esto es<br>solo el comienzo.</h2>
+<p>Jorge &amp; Jani · 07.06.2026</p>
+</div>
+</section>
+<a class="top" href="#">↑</a>
+
+<script>
+const start=new Date('2026-06-07T00:00:00');
+function tick(){
+ let x=Math.max(0,new Date()-start);
+ d.textContent=Math.floor(x/86400000);
+ h.textContent=Math.floor(x/3600000)%24;
+ m.textContent=Math.floor(x/60000)%60;
+ s.textContent=Math.floor(x/1000)%60;
+}
+setInterval(tick,1000); tick();
+
+document.querySelectorAll('.q').forEach(q=>q.onclick=()=>q.classList.toggle('open'));
 
 const letterParagraphs = [
-
 "Espero que estés bien al momento de leer esto. ¿Cómo consideras que se encuentra nuestra relación en estos momentos? La comunicación es vital para poder resolver cualquier situación que se llegase a presentar entre nosotros, por lo cual, quiero ser muy honesto contigo en este momento.",
-
 "Tal vez sea algo que repito mucho, pero si tú te cansas de oírlo, imagínate yo cómo me siento de tener que decirlo todo el tiempo porque no siento que haya un cambio. No sé por qué te cuesta tanto decidir amarme, porque recuerda que amar no es un sentimiento, es una decisión. Y yo te ofrezco un futuro en donde hagamos una familia y sobre todo que formemos un equipo entre tú y yo contra el mundo. No te prometo lujos ni cosas que no sé si podré darte, pero que si está en mi poder hacerlo lo haré con todo el amor, pero sí te prometo que no viviremos en escasez, porque me esforzaré siempre para que tengamos todas nuestras necesidades cubiertas y que seguido podamos darnos una escapada para distraernos de la rutina de todos los días. Te ofrezco lealtad incondicional, transparencia y acceso a mis lugares más sensibles, amor desbordante y un deseo incontrolable por ti. No te pido lo mismo a cambio, pero qué bonito sería que los dos estemos locamente enamorados el uno del otro, mi sueño es ser y sentirme amado y elegido por ti, que tus decisiones sean tomadas pensando en mí también, que no demos un paso sin consultarlo entre nosotros y respetar el sí y el no que nos digamos. Ver por el bienestar de la relación, el desarrollo y crecimiento de la relación, no el individual…",
-
 "Oportunidades en la vida se nos van a presentar muchísimas, unas mejores que otras, pero no despeguemos la mirada de nosotros. No dejemos que nos seduzca esa oferta, ese Empleo, ese negocio, esa persona, ese grupo de amigos… cada quien vive su vida como quiere hacerlo, no nos dejemos influenciar por la manera en que los demás la quieren vivir, porque si queremos estar en una relación la única opinión que nos debe importar es la de nuestra pareja, y de ahí todas las demás podemos tomarlas en cuenta, pero la principal y la más importante, la que nos debe ayudar a decidir si sí o no es la de nuestra pareja.",
-
 "Yo te amo y quiero hacer una vida contigo, aquí la cuestión es que tú quieras lo mismo, aquí la cuestión es que ordenes tus prioridades, pero que sea ya, que sea pronto. Y ojalá me elijas a mí… porque yo ya no me veo viviendo sin ti"
-
 ];
 
-const openLetterButton =
-document.getElementById("openLetter");
+const intro=document.getElementById('letterIntro');
+const card=document.getElementById('letterCard');
+const textEl=document.getElementById('letterText');
+const progress=document.getElementById('letterProgress');
+const openBtn=document.getElementById('openLetter');
+const closeBtn=document.getElementById('closeLetter');
 
-const letterIntro =
-document.getElementById("letterIntro");
-
-const letterCard =
-document.getElementById("letterCard");
-
-const letterText =
-document.getElementById("letterText");
-
-const progress =
-document.getElementById("letterProgress");
-
-
-openLetterButton.addEventListener("click", function() {
-
-  letterIntro.classList.add("hide");
-
-  setTimeout(function() {
-
-    letterIntro.style.display = "none";
-
-    letterCard.classList.add("show");
-
-    letterText.innerHTML = "";
-
-    let paragraph = 0;
-    let character = 0;
-
-    function writeLetter() {
-
-      if (paragraph >= letterParagraphs.length) {
-
-        progress.style.width = "100%";
-
-        return;
-
-      }
-
-      if (character === 0) {
-
-        const p = document.createElement("p");
-
-        p.id = "currentParagraph";
-
-        letterText.appendChild(p);
-
-      }
-
-      const current =
-      document.getElementById("currentParagraph");
-
-      current.textContent +=
-      letterParagraphs[paragraph][character];
-
-      character++;
-
-      let totalCharacters =
-      letterParagraphs.reduce(
-        (total, text) => total + text.length,
-        0
-      );
-
-      let completedCharacters =
-      letterParagraphs
-      .slice(0, paragraph)
-      .reduce(
-        (total, text) => total + text.length,
-        0
-      ) + character;
-
-      progress.style.width =
-      (completedCharacters / totalCharacters * 100) + "%";
-
-      if (
-        character <
-        letterParagraphs[paragraph].length
-      ) {
-
-        setTimeout(writeLetter, 16);
-
-      } else {
-
-        current.removeAttribute("id");
-
-        paragraph++;
-
-        character = 0;
-
-        setTimeout(writeLetter, 500);
-
-      }
-
-    }
-
-    writeLetter();
-
-  }, 500);
-
-});
-
-</script> </body></html>
+let typingTimer;
+function openLetter(){
+ intro.classList.add('hide');
+ setTimeout(()=>{
+   intro.style.display='none';
+   card.classList.add('show');
+   textEl.innerHTML='';
+   progress.style.width='0%';
+   let pIndex=0, charIndex=0;
+   function type(){
+     if(pIndex>=letterParagraphs.length){progress.style.width='100%';return;}
+     if(charIndex===0){
+       const p=document.createElement('p');
+       p.id='typingP';
+       textEl.appendChild(p);
+     }
+     const p=document.getElementById('typingP');
+     p.textContent += letterParagraphs[pIndex][charIndex++];
+     const total=letterParagraphs.reduce((a,x)=>a+x.length,0);
+     const done=letterParagraphs.slice(0,pIndex).reduce((a,x)=>a+x.length,0)+charIndex;
+     progress.style.width=(done/total*100)+'%';
+     if(charIndex<letterParagraphs[pIndex].length){
+       typingTimer=setTimeout(type,16);
+     }else{
+       p.removeAttribute('id');
+       pIndex++; charIndex=0;
+       typingTimer=setTimeout(type,420);
+     }
+   }
+   type();
+ },500);
+}
+function closeLetter(){
+ clearTimeout(typingTimer);
+ card.classList.remove('show');
+ setTimeout(()=>{
+   card.style.display='none';
+   intro.style.display='block';
+   requestAnimationFrame(()=>intro.classList.remove('hide'));
+ },450);
+}
+openBtn.addEventListener('click',openLetter);
+closeBtn.addEventListener('click',closeLetter);
+</script>
+</body>
+</html>
